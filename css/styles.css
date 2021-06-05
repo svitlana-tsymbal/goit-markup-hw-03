@@ -67,6 +67,9 @@ button {
 .pointer-button { cursor: pointer; }
 
 /* HEADER STYLES */
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
 .header .container{
     width: 1200px;
     padding-left: 15px;
@@ -75,12 +78,12 @@ button {
     margin-right: auto;
     display: flex;
     align-items: center;
-    
+    font-weight: var(--font-weigt-500);
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    padding: 0;
     }
-.header{
-    border-bottom: 1px solid #ECECEC;
-}
-
 .nav{
     display: flex;
     align-items: center;
@@ -120,13 +123,6 @@ button {
 .nav-list .link{
     display: block;
 }
-.header {
-    font-weight: var(--font-weigt-500);
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.02em;
-    padding: 0;
-    }
 /*header-contacts*/
 .header-contacts{
     color: var(--small-text-color);
@@ -143,7 +139,7 @@ button {
 .nav-color:focus {color: var(--accent-color);}
 
 /*HERO Styles*/
-.hero{
+.hero .container{
     padding: 200px 0;
     text-align: center;
     background-color: var(--accent-background-color);
@@ -173,7 +169,7 @@ button {
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    }
+}
 
 /*Main-messages styles*/
 .main-messag {
@@ -186,6 +182,10 @@ button {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    color: var(--small-text-color);
+    font-weight: var(--font-weigt-normal);
+    font-size: 14px;
+    line-height: 1.714;
 }
 .main-messag .container .list{
     display: flex;
@@ -205,25 +205,20 @@ button {
     line-height: 1.143;
     text-transform: uppercase;
     }
-.main-messag{
-    color: var(--small-text-color);
-    font-weight: var(--font-weigt-normal);
-    font-size: 14px;
-    line-height: 1.714;
-    }
 
 /*<!--Чим ми займаємося--> <!--Наша команда--> styles*/
 .tasks {
+    padding-bottom: 94px;
+}
+.tasks .container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
 }
 .tasks .container .list{
     display: flex;
-    
 }
 .tasks h2 {
     color: var(--main-text-color);
@@ -243,23 +238,23 @@ button {
 
 /*<!--Наша команда-->*/
 .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team .container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 94px;
-    padding-bottom: 94px;
     margin-left: auto;
     margin-right: auto;
     background: #F5F4FA;
 }
 .team .container .list{
     display: flex;
-    
 }
 .imb-signature{
     padding-top: 30px;
     padding-bottom: 30px;
-
 }
 .team h2 {
     color: var(--main-text-color);
@@ -292,13 +287,15 @@ button {
 }
 /*Portfolio styles*/
 .portfolio{
-    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.portfolio .container{
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
 }
 /*Portfolio-button styles*/
 .portfolio-button .list{
@@ -307,7 +304,6 @@ button {
     align-items: center;
 }
 .portfolio-button .item{
-    
     border-radius: 4px;
     margin-right: 8px;
 }
@@ -326,19 +322,23 @@ button {
     font-weight: var(--font-weigt-500);
     font-size: 16px;
     line-height: 1.625;
-    
-    }
+}
 .portfolio-button:last-child{
     margin-right: 0;
 }
 .portfolio-button button {
-    background: #F5F4FA;}
-    
+    background: #F5F4FA;
+    padding: 6px 22px 6px 22px;
+}
+  
 /*img-portfolio styles*/
 .img-portfolio .list{
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+}
+img{
+    display: block;
 }
 .img-portfolio .item{
     width: 370px;
@@ -359,12 +359,11 @@ button {
     border-top:none;
 }
 .img-portfolio {
-
     color: var(--main-text-color);
     font-weight: var(--font-weigt-normal);
     font-size: 16px;
     line-height: 1.875;
-    }
+}
 .img-portfolio .title {
     padding-bottom: 4px;
     color: var(--main-text-color);
@@ -372,22 +371,20 @@ button {
     font-size: 18px;
     line-height: 2.000;
     letter-spacing: 0.06em;
-    }
+}
 
 /*footer styles*/
-.footer{
+footer{
     background-color: var(--accent-background-color);
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
-    
 .footer .container{
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 60px;
-    padding-top: 60px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 .footer .list{
     margin-top: 20px;   
@@ -404,7 +401,6 @@ button {
 .footer .item:last-child{
     margin-bottom: 0;
 }
-
 .footer-nav-color {
     color:rgba(255, 255, 255, 0.6);
     font-style: normal;
