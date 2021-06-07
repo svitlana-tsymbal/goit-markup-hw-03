@@ -139,10 +139,12 @@ button {
 .nav-color:focus {color: var(--accent-color);}
 
 /*HERO Styles*/
+.hero{
+    background-color: var(--accent-background-color);
+}
 .hero .container{
     padding: 200px 0;
     text-align: center;
-    background-color: var(--accent-background-color);
 }
 .hero h1 {
     color: var(--white-color);
@@ -240,6 +242,7 @@ button {
 .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    background: #F5F4FA;
 }
 .team .container{
     width: 1200px;
@@ -247,7 +250,6 @@ button {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    background: #F5F4FA;
 }
 .team .container .list{
     display: flex;
@@ -310,27 +312,22 @@ button {
 .portfolio-button .item:last-child{
     margin-right: 0;
 }
-.all-portfolio-button {
-    color: var(--main-text-color);
-    font-size: 16px;
-    line-height: 1.625;
-}
-.all-portfolio-button:hover {background: var(--accent-color);
-    color: var(--white-color);}
-.portfolio-button {
-    color: var(--main-text-color);
-    font-weight: var(--font-weigt-500);
-    font-size: 16px;
-    line-height: 1.625;
-}
 .portfolio-button:last-child{
     margin-right: 0;
 }
 .portfolio-button button {
+    color: var(--main-text-color);
+    font-weight: var(--font-weigt-500);
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
     background: #F5F4FA;
     padding: 6px 22px 6px 22px;
+    border-radius: 4px;    
 }
-  
+.all-portfolio-button:hover {background: var(--accent-color);
+    color: var(--white-color);}
+
 /*img-portfolio styles*/
 .img-portfolio .list{
     display: flex;
@@ -359,13 +356,13 @@ img{
     border-top:none;
 }
 .img-portfolio {
-    color: var(--main-text-color);
+    color: var(--small-text-color);
     font-weight: var(--font-weigt-normal);
     font-size: 16px;
     line-height: 1.875;
 }
 .img-portfolio .title {
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--main-text-color);
     font-weight: var(--font-weigt-bold);
     font-size: 18px;
